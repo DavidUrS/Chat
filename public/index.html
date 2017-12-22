@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chat tutorial</title>
+    <style media="screen">
+        #chat{
+            height: 500px;
+            border: 1px solid gray;
+            width: 20%;
+        }
+        #message-box{
+            width: 20%;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div id="chat"></div>
+        <form id="message-box">
+            <input type="text" id="chat-message">
+            <input type="submit" value="Enviar">
+        </form>
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>  
+    <script src="/socket.io/socket.io.js"></script>
+
+    <script src="main.js"></script>
+</body>
+</html>
